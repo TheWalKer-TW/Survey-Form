@@ -4,8 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Wedding's Drink Form</h1>
+        <p id="description">This form helps us know your preferences so we can satisfy your thirsty desires</p>
+    </header>
+    <div class="container">
+        <form id="survey-form">
+            <div class="form_div name">
+                <label id="name-label" for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-input"
+                    placeholder="Enter your name here"
+                    required
+                />
+            </div>
+
+            <div class="form_div email">
+                <label id="email-label" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    placeholder="Enter your email here"
+                    required
+                />
+            </div>
+
+            <div class="form_div age">
+                <label id="number-label" for="age">Age</label>
+                <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="16"
+                    max="99"
+                    class="form-input"
+                    placeholder="Age"
+                    required
+                />
+            </div>
+
+            <div class="form_div dropdown">
+                <p>Which of these options best descibes your role?</p>
+                <select id="dropdown" name="role" class="form-input" required>
+                    <option disabled selected value="">Select your role in the wedding</option>
+                    <option value="Bride/Groom">Bride/Groom</option>
+                    <option value="Honor Attendant">Honor Attendant</option>
+                    <option value="Father/Mother of the Groom">Father/Mother of the Groom</option>
+                    <option value="Father/Mother of the Bride">Father/Mother of the Bride</option>
+                    <option value="Attendant">Attendant</option>
+                    <option value="Best Man/Matron of Honor">Best Man/Matron of Honor</option>
+                    <option value="Bridesmaids/Groomsmen">Bridesmaids/Groomsmen</option>
+                    <option value="Bridesmen/Groomswomen">Bridesmen/Groomswomen</option>
+                    <option value="Junior Bridesmaids/Groomsmen/Ushers">Junior Bridesmaids/Groomsmen/Ushers</option>
+                    <option value="Flower Girl/Child">Flower Girl/Child</option>
+                    <option value="Ring Bearer">Ring Bearer</option>
+                    <option value="Officiant">Officiant</option>
+                    <option value="Usher">Usher</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form_div open_bar-time">
+                <p>When would you prefer the open bar?</p>
+                <label>
+                    <input
+                        type="radio"
+                        name="open_bar-time"
+                        class="form_radio-input"
+                        value="Before Ceremony"
+                    /> Before Ceremony
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="open_bar-time"
+                        class="form_radio-input"
+                        value="At the Ceremony"
+                    /> At the Ceremony
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="open_bar-time"
+                        class="form_radio-input"
+                        value="After Ceremony"
+                    /> After Ceremony
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="open_bar-time"
+                        class="form_radio-input"
+                        value="At Dinner"
+                    /> At Dinner
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="open_bar-time"
+                        class="form_radio-input"
+                        value="Night Party"
+                        checked
+                    /> Night Party
+                </label>
+
+            <div class="form_div checkbox">
+                <p>
+                    Which of these drinks you like? <span class="hint">(You can chose as many as you want)</span>
+                </p>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Soft drink"
+                    /> Soft drink
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Beer"
+                    /> Beer
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Cider"
+                    /> Cider
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Milk Shake"
+                    /> Milk Shake
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Smoothie"
+                    /> Smoothie
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Champagne"
+                    /> Champagne
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Soda"
+                    /> Soda
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Lemonade"
+                    /> Lemonade
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Juice"
+                    /> Juice
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Wine"
+                    /> Wine
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="liked_drink"
+                        class="form_checkbox-input"
+                        value="Liquors and Spirits"
+                    /> Liquors and Spirits
+                </label>
+            </div>
+
+            <div class="form_div textarea_suggestions">
+                <p>Any comments, suggestions or more drinks you would like in the wedding?</p>
+                <textarea
+                    id="suggestions"
+                    class="form_textarea-input"
+                    name="suggestions"
+                    placeholder="Enter here any comments, suggestions or more drinks you would like in the wedding..."
+                ></textarea>
+            </div>
+
+            <div class="form_div">
+                <button type="submit" id="submit" class="form-submit_button" form="survey-form">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>
